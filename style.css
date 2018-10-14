@@ -7,34 +7,65 @@ body {
 #container {
   width: 1000px;
   margin: auto;
-  margin-top: 50px;
+  text-align: center;
 }
 
 #pokemon-search-form {
   width: 500px;
-  margin: auto;
-  margin-top: 50px;
+  margin: -25px auto 75px;
 }
 
 #pokemon-search-input {
   font-size: 3rem;
-  border: 3px solid #fecd2f;
-  color: #2d72fc;
+  /* border: 3px solid #fecd2f; */
+  border: 5px solid black;
+  /* color: #2d72fc; */
+  color: skyblue;
 }
 
 #pokemon-logo {
-  width: 300px;
-  margin-left: 330px;
+  width: 500px;
+  text-align: center;
 }
 
 input:focus {
   outline: none;
 }
 
-.pokemon-container {
-  float: left;
-  width: 250px;
-  margin: auto;
+#pokemon-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#pokemon-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.front {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: strong;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.back {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-text {
