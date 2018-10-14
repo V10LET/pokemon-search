@@ -38,7 +38,7 @@ input:focus {
   justify-content: center;
 }
 
-#pokemon-card {
+.pokemon-card {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

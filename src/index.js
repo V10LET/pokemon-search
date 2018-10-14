@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const URL = 'https://pokeapi.co/api/v2/pokemon/'
+
   const pokemons = fetch(URL)
   .then(result=> result.json())
   .then(json=> json.results)
-  .then(POKEMON=> { pokeGo(POKEMON)})
-
+  .then(POKEMON=> {pokeGo(POKEMON)})
 
   function pokeGo(POKEMON) {
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let name = pokemon.name
 
       // adding classes to each card
-      div.setAttribute('id', 'pokemon-card')
+      div.setAttribute('class', 'pokemon-card')
       cardFront.setAttribute('class', 'front')
 
       // add cards to DOM
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
               div.remove()
             }
         // if filter is empty
-        } else if (filter = "") {
+      } else if (filter === "") {
           pokeContain.appendChild(div)
         // if input is anything else
         } else {
